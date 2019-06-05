@@ -73,3 +73,7 @@ ChocoPreReqs
 Database
 ```
 
+# Confirmation step
+
+Log in to the database instance and check that the database has been created.
+If the database hasn't been created, check the chocolatey log under ``` C:\Program Data\Chocolatey\logs\chocolatey.log ```
