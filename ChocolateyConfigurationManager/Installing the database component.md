@@ -33,4 +33,14 @@ Let's assume that you want to install the CCM Database onto a machine that will 
 ``` Powershell
 choco upgrade chocolatey-management-database --package-parameters-sensitive="'/ConnectionString=""Server=MACHINE1\SQLSERVERCCM;Database=ChocolateyManagement;User ID=ccmtest\ccmservice;Password=Password01;""'"
 ```
-**NOTE:** This command makes use of package-parameters-sensitive to ensure that the sensitive information is not leaked out into log files.
+**NOTE:** This command makes use of **package-parameters-sensitive** to ensure that the sensitive information is not leaked out into log files. The AppSettings.json file will still contain an encrypted connectionstring even if **package-parameters-sensitive** is switched out with  **package-parameters** or **params**
+
+#Powershell script for Database installation example
+
+``` powershell
+  choco upgrade chocolatey --version 0.10.15
+  choco upgrade chocolatey.extension --version 2.0.2
+  choco upgrade chocolatey-agent --version 0.9.1
+  choco upgrade chocolatey-management-database --version 0.1.0
+```
+
