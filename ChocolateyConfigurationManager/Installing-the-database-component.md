@@ -66,7 +66,7 @@ Function ChocoPreReqs() {
 }
 
 Function Database() {
-    choco upgrade chocolatey-management-database -y --params="'/PortNumber=24020'" --package-parameters=$databaseConnectionString
+    choco upgrade chocolatey-management-database -y --package-parameters-sensitive="'/PortNumber=24020'" --package-parameters=$databaseConnectionString
 }
 
 ChocoPreReqs
