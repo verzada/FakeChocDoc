@@ -66,7 +66,7 @@ Let's assume that you want to install the CCM Service with a specific connection
 ``` powershell
 choco upgrade chocolatey-management-service --package-parameters-sensitive="'/PortNumber=24021 /Username=ccmtest\ccmservice /Password=Password01 /ConnectionString=""Server=MACHINE1\SQLSERVERCCM;Database=ChocolateyManagement;User ID=ccmtest\ccmservice;Password=Password01;""'"
 ```
-** NOTE:** This command makes use of package-parameters-sensitive to ensure that the sensitive information is not leaked out into log files.
+**NOTE:** This command makes use of package-parameters-sensitive to ensure that the sensitive information is not leaked out into log files.
 
 # Powershell example
 
