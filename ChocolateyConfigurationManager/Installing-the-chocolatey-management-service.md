@@ -10,7 +10,7 @@ chocolatey --version 0.10.15
 chocolatey.extension --version 2.0.2
 chocolatey-agent --version 0.9.1
 chocolatey-management-service --version 0.1.0
-``` powershell
+```
 
 Package Parameters
 This package creates the CCM Service with the following defaults:
