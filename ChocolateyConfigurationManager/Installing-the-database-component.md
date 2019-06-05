@@ -5,10 +5,10 @@ In order to successfully install the chocolatey-management-database package onto
 
 ## Package requirements
 ``` powershell
-  choco upgrade chocolatey --version 0.10.15
-  choco upgrade chocolatey.extension --version 2.0.2
-  choco upgrade chocolatey-agent --version 0.9.1
-  choco upgrade chocolatey-management-database --version 0.1.0
+  chocolatey --version 0.10.15
+  chocolatey.extension --version 2.0.2
+  chocolatey-agent --version 0.9.1
+  chocolatey-management-database --version 0.1.0
 ```
 
 ## Package Parameters
