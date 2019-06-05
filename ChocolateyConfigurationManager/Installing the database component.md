@@ -35,7 +35,7 @@ choco upgrade chocolatey-management-database --package-parameters-sensitive="'/C
 ```
 **NOTE:** This command makes use of **package-parameters-sensitive** to ensure that the sensitive information is not leaked out into log files. The AppSettings.json file will still contain an encrypted connectionstring even if **package-parameters-sensitive** is switched out with  **package-parameters** or **params**
 
-#Powershell script for Database installation example
+## Powershell script for Database installation example
 
 ``` powershell
   choco upgrade chocolatey --version 0.10.15
