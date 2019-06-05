@@ -17,17 +17,20 @@ This package creates the CCM Database with the following defaults:
 Database Connection String: Server=<LOCAL COMPUTER FQDN NAME>; Database=ChocolateyManagement; Trusted_Connection=True;
 You can override the package defaults using the following parameters:
 
-/ConnectionString
-The SQL Server database connection string to be used to connect to the CCM database.
-NOTE: Default Value: Server=<LOCAL COMPUTER FQDN NAME>; Database=ChocolateyManagement; Trusted_Connection=True;
-/Database
-Name of the SQL Server database to use. Note that if you do not also pass /ConnectionString, it will be generated using this parameter value and /SqlServerInstance (using defaults for missing parameters);
-NOTE: Default Value: ChocolateyManagement
-/SqlServerInstance
-Instance name of the SQL Server database to connect to. Note that if you do not also pass /ConnectionString, it will be generated using this parameter value and /Database (using defaults for missing parameters);
-NOTE: Default Value: <LOCAL COMPUTER FQDN NAME>
-Example
-Let's assume that you want to install the CCM Database onto a machine that will access a SQL Server instance called SQLSERVERCCM, on a domain machine called MACHINE1 which is part of the domain ccmtest, using a specific user name (ccmservice) and password combination. In this scenario, the installation command would look like the following:
+* ```/ConnectionString ```
+  * The SQL Server database connection string to be used to connect to the CCM database.
+  * NOTE: Default Value: **Server=<LOCAL COMPUTER FQDN NAME>; Database=ChocolateyManagement; Trusted_Connection=True;**
+* ```/Database ```
+  * Name of the SQL Server database to use. Note that if you do not also pass ```/ConnectionString```, it will be generated using this parameter value and ```/SqlServerInstance``` (using defaults for missing parameters);
+  * NOTE: Default Value: ChocolateyManagement
+* ```/SqlServerInstance```
+  * Instance name of the SQL Server database to connect to. Note that if you do not also pass ```/ConnectionString```, it will be generated using this parameter value and ```/Database``` (using defaults for missing parameters);
+  * NOTE: Default Value: **<LOCAL COMPUTER FQDN NAME>**
 
+**Example**
+Let's assume that you want to install the CCM Database onto a machine that will access a SQL Server instance called ```SQLSERVERCCM```, on a domain machine called ```MACHINE1``` which is part of the domain ccmtest, using a specific user name (ccmservice) and password combination. In this scenario, the installation command would look like the following:
+
+``` Powershell
 choco upgrade chocolatey-management-database --package-parameters-sensitive="'/ConnectionString=""Server=MACHINE1\SQLSERVERCCM;Database=ChocolateyManagement;User ID=ccmtest\ccmservice;Password=Password01;""'"
-NOTE: This command makes use of package-parameters-sensitive to ensure that the sensitive information is not leaked out into log files.
+```
+**NOTE:** This command makes use of package-parameters-sensitive to ensure that the sensitive information is not leaked out into log files.
