@@ -13,7 +13,7 @@
 
 If the enviroment CCM is installed into, is heavily restricted. Do not use an machine account for the agent and management service, since it's probably that they cannot send nor receive information between them in the network. There can also be restriction on an machine user if there's a proxy as well.
 
-### Installation process
+### Installation process step by step
 The installation process needs to be done in this order:
 
 1. Chocolatey 
