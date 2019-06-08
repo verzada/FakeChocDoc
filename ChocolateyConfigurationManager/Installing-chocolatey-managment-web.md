@@ -2,7 +2,7 @@
 
 ## Assumptions
 
-The agent, management database and the management service has been installed and are running properly.
+The agent, management database and the management service has been installed and are running properly according to the previous steps in the guide.
 
 ## Notes
 
