@@ -121,5 +121,7 @@ ManagementService
 # Confirmation step
 
 To confirm that the service is running, check the log at
+
 ``` C:\ProgramData\chocolatey\lib\chocolatey-mangament-service\tools\log\ccm.log ```
+
 If the agents are reporting that they can report, but nothing pops up in the database after a few minutes, then something is either blocking the agents or the service cannot update the database.
