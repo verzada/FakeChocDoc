@@ -1,5 +1,5 @@
 # Installing chocolatey-management-database
-NOTE: It is likely that additional package parameters are required which are specific to your environment. Please carefully review the available package parameters before proceeding.
+**NOTE:** It is likely that additional package parameters are required which are specific to your environment. Please carefully review the available package parameters before proceeding.
 
 In order to successfully install the chocolatey-management-database package onto a machine (using all default values), the following steps are required:
 
