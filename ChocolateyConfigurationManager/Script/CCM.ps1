@@ -1,7 +1,3 @@
-``` powershell
- # Find FDQN for current machine
-
- 
 $hostName = HostName()
 $databaseServer = 'FQDN.default.domain';
 $databaseName = 'ChocolateyCentralManagement'
