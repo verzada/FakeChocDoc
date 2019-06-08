@@ -2,7 +2,7 @@
 
 ### Requirements
 
-1- The chocolatey license source is installed and available (the same one used to install the Chocolatey Agent and Chocolatey Extension)
+1. The chocolatey license source is installed and available (the same one used to install the Chocolatey Agent and Chocolatey Extension)
 1. Chocolatey with a C4B license installed on the clients running the agents
 1. An Active Directory (preferably service) account with membership in the local Administrator group running the agent service 
 1. Chocolatey with a C4B license installed on the server(s) running the managment and web service
@@ -25,3 +25,6 @@ The installation process needs to be done in this order:
 1. Adding agents to clients with url to the managment service
 
 Both the management service and the web service requires the database and therefore must be readily accessible. This is usually not a problem if the managment service and web service is running on the same server as the database.
+
+Lets start with 
+[installing the database ](Installing chocolatey-management-database)
