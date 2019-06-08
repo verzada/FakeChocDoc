@@ -1,9 +1,9 @@
 # Installing chocolatey-management-service
-NOTE: It is likely that additional package parameters are required which are specific to your environment. Please carefully review the available package parameters before proceeding.
+**NOTE:** It is likely that additional package parameters are required which are specific to your environment. Please carefully review the available package parameters before proceeding.
 
 In order to successfully install the chocolatey-management-service package onto a machine (using all default values), the following steps are required:
 
-NOTE: Due to an issue that was identified in the initial release of CCM, the port number parameter is required.
+**NOTE:** Due to an issue that was identified in the initial release of CCM, the port number parameter is required.
 
 ``` powershell
 chocolatey --version 0.10.15
@@ -16,7 +16,7 @@ chocolatey-management-service --version 0.1.0
 This package creates the CCM Service with the following defaults:
 
 * Service Name: **chocolatey-management-service**
-* Service Displayname **Chocolatey Management Service**
+* Service Displayname: **Chocolatey Management Service**
 * Description: **Chocolatey Management Service is a background service for Chocolatey.**
 * Service Startup: **Automatic**
 * Service Username: **ChocolateyLocalAdmin**
