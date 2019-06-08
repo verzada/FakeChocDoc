@@ -1,3 +1,7 @@
+# Assumptions
+
+The agent, management database and the management service has been installed and is running properly.
+
 # Notes
 
 ### Package parameters
@@ -8,7 +12,7 @@
 **NOTE:** Once installed, when you access the CCM Website you will be prompted to provide a username and password to access the site. 
 By default, the username is ```ccmadmin``` and the password is ```123qwe```. After you input this, you will be prompted to change the password.
 
-In order to successfully install the chocolatey-management-web package onto a machine (using all default values), the following steps are required:
+In order to successfully install the chocolatey-management-web package onto a machine (using all default values), the following packages are required:
 
 ``` powershell
 aspnetcore-runtimepackagestore
