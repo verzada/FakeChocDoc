@@ -1,15 +1,15 @@
 # Installation requirements for Chocolatey Configuration Manager
 
-### Requirements
+### Requirements and preperations
 
 1. The chocolatey license source is installed and available (the same one used to install the Chocolatey Agent and Chocolatey Extension)
 1. Chocolatey with a C4B license installed on the clients running the agents
-1. An Active Directory (preferably service) account with membership in the local Administrator group running the agent service 
+1. An Active Directory (preferably service) account with membership in the local Administrator group running the agent service. This is assumming you're in an enterprise environment with Active Directory. If not, then you can skip this step.
 1. Chocolatey with a C4B license installed on the server(s) running the managment and web service
 1. Windows Server 2012 and upward
 1. SQL Server 2012 database and upward
 
-### Considerations
+### Considerations in an enterprise environment
 
 If the enviroment CCM is installed into, is heavily restricted. Do not use an machine account for the agent and management service, since it's probably that they cannot send nor receive information between them in the network. There can also be restriction on an machine user if there's a proxy as well.
 
