@@ -57,8 +57,12 @@ You can override the package defaults using the following parameters:
   * This will prompt you to enter the password, during install, for the username (provided via the /Username parameter) the IIS WebApplicationPool will run under;
   * NOTE: Default Value: Not provided
 
-###Example
+### Example
 Let's assume that you want to install the CCM Website with a specific connection string in order to connect to the CCM Database, as well as configure the IIS Application Pool to use a specific user name and password. The necessary installation command would look like the following:
 
-choco upgrade chocolatey-management-web --package-parameters-sensitive="'/ConnectionString=""Server=MACHINE1\SQLSERVERCCM;Database=ChocolateyManagement;User ID=ccmtest\ccmservice;Password=Password01;"" /Username=ccmwebserver\ccmserviceuser /Password=Password01'"`
-NOTE: This command makes use of package-parameters-sensitive to ensure that the sensitive information is not leaked out into log files.
+``` powershell
+choco upgrade chocolatey-management-web --package-parameters-sensitive="'/ConnectionString=""Server=MACHINE1\SQLSERVERCCM;Database=ChocolateyManagement;User ID=ccmtest\ccmservice;Password=Password01;"" /Username=ccmwebserver\ccmserviceuser /Password=Password01'"
+
+```
+
+**NOTE:** This command makes use of ```package-parameters-sensitive``` to ensure that the sensitive information is not leaked out into log files.
