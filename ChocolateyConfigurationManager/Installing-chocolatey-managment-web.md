@@ -59,10 +59,10 @@ You can override the package defaults using the following parameters:
   * Instance name of the SQL Server database to connect to. Note that if you do not also pass /ConnectionString, it will be generated using this parameter value and /Database (using defaults for missing parameters);
   * NOTE: Default Value: <LOCAL COMPUTER FQDN NAME>
 * ```/Username```
-  * The username that the IIS WebApplicationPool will run under. If this is not provided the pool will run under the default account. Note that if you provide this you must also provide either the /Password or /EnterPassword parameter;
+  * The username that the **IIS WebApplicationPool will run under**. If this is not provided the pool will run under the default account. Note that if you provide this you must also provide either the /Password or /EnterPassword parameter;
   * NOTE: Default Value: IIS APPPOOL\ChocolateyCentralManagement
 * ```/Password```
-  * The password for the username (provided via the /Username parameter) the IIS WebApplicationPool will run under;
+  * The password for the **username (provided via the /Username parameter) the IIS WebApplicationPool** will run under;
   * NOTE: Automatically generated secure password
 * ```/EnterPassword```
   * This will prompt you to enter the password, during install, for the username (provided via the /Username parameter) the IIS WebApplicationPool will run under;
