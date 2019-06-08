@@ -1,14 +1,16 @@
-# Assumptions
+# Installing chocolatey-management-web
+
+## Assumptions
 
 The agent, management database and the management service has been installed and is running properly.
 
-# Notes
+## Notes
 
-### Package parameters
+#### Package parameters
 
 **NOTE:** It is likely that additional package parameters are required which are specific to your environment. Please carefully review the available **package parameters** before proceeding.
 
-### Username and password
+#### Username and password
 **NOTE:** Once installed, when you access the CCM Website you will be prompted to provide a username and password to access the site. 
 By default, the username is ```ccmadmin``` and the password is ```123qwe```. After you input this, you will be prompted to change the password.
 
@@ -23,7 +25,7 @@ chocolatey-agent --version 0.9.1
 chocolatey-management-web --version 0.1.0
 ```
 
-## Package Parameters
+#### Package Parameters
 This package creates the CCM Website and Application Pool with the following defaults:
 
 * IIS Web Application Pool: **ChocolateyCentralManagement**
@@ -61,7 +63,7 @@ You can override the package defaults using the following parameters:
   * This will prompt you to enter the password, during install, for the username (provided via the /Username parameter) the IIS WebApplicationPool will run under;
   * NOTE: Default Value: Not provided
 
-### Example
+#### Example
 Let's assume that you want to install the CCM Website with a specific connection string in order to connect to the CCM Database, as well as configure the IIS Application Pool to use a specific user name and password. The necessary installation command would look like the following:
 
 ``` powershell
