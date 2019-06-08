@@ -1,4 +1,10 @@
 # Installing chocolatey-management-service
+
+## Assumptions
+
+* The database has been installed and is accessible according to the [steps described here](https://github.com/verzada/FakeChocDoc/blob/UnOfficial/ChocolateyConfigurationManager/Installing-the-database-component.md)
+* There is an Active Directory user account (preferably service account) available if needed
+
 **NOTE:** It is likely that additional package parameters are required which are specific to your environment. Please carefully review the available package parameters before proceeding.
 
 In order to successfully install the chocolatey-management-service package onto a machine (using all default values), the following steps are required:
@@ -60,7 +66,7 @@ You can override the package defaults using the following parameters:
   * Explicit request not to reinstall the service
   * **NOTE:** Default Value: Not provided
 
-##Example
+## Example
 Let's assume that you want to install the CCM Service with a specific connection string in order to connect to the CCM Database, as well as configure the CCM Service to use a specific user name and password, as well as alter the Port number that the CCM Service will be hosted on. The necessary installation command would look like the following:
 
 ``` powershell
